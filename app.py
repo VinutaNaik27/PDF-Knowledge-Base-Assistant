@@ -13,7 +13,10 @@ from langchain_core.prompts import PromptTemplate
 load_dotenv()
 
 # Load environment variables
-GROQ_API_KEY =os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = (
+    os.getenv("GROQ_API_KEY")
+    or st.secrets.get("GROQ_API_KEY")
+)
 # Models
 model="llama-3.3-70b-versatile"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
