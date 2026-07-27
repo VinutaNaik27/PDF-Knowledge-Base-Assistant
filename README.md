@@ -1,53 +1,67 @@
 # 📄 PDF Knowledge Base Assistant
 
-A Streamlit-based AI application that allows users to upload PDF documents, create a searchable knowledge base using FAISS vector storage, and ask questions about the uploaded content using Groq LLMs and LangChain.
+<div align="center">
 
-## 🚀 Features
+### AI-powered PDF Question Answering using Streamlit, LangChain, FAISS & Groq
 
-* Upload one or multiple PDF documents
-* Extract text from PDFs
-* Split documents into manageable chunks
-* Generate embeddings using Sentence Transformers
-* Store embeddings locally using FAISS
-* Ask questions about uploaded documents
-* Retrieve relevant document chunks automatically
-* Generate context-aware answers using Groq LLM
-* View source document chunks used to generate answers
-* Interactive chat interface powered by Streamlit
+Upload PDF documents, build a semantic knowledge base, and ask natural language questions with context-aware AI responses.
 
----
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=for-the-badge&logo=streamlit)
+![LangChain](https://img.shields.io/badge/LangChain-Framework-green?style=for-the-badge)
+![FAISS](https://img.shields.io/badge/FAISS-VectorDB-orange?style=for-the-badge)
+![Groq](https://img.shields.io/badge/Groq-LLM-black?style=for-the-badge)
 
-## 🛠️ Technologies Used
-
-### Frontend
-
-* Streamlit
-
-### Backend
-
-* Python
-
-### AI & LLM
-
-* Groq API
-* LangChain
-
-### Embeddings
-
-* Sentence Transformers
-* HuggingFace Embeddings
-
-### Vector Database
-
-* FAISS
-
-### PDF Processing
-
-* PyPDF
+</div>
 
 ---
 
-## 📂 Project Structure
+# 🚀 Features
+
+- 📄 Upload one or multiple PDF documents
+- 🔍 Extract text from PDFs
+- ✂️ Split documents into manageable chunks
+- 🧠 Generate embeddings using Sentence Transformers
+- 💾 Store embeddings locally using FAISS
+- 💬 Ask questions about uploaded documents
+- 🎯 Retrieve relevant document chunks automatically
+- 🤖 Generate context-aware answers using Groq LLM
+- 📚 View source document chunks used to generate answers
+- 🌐 Interactive chat interface powered by Streamlit
+
+---
+
+# 🛠️ Technologies Used
+
+## 🎨 Frontend
+
+- Streamlit
+
+## ⚙️ Backend
+
+- Python
+
+## 🤖 AI & LLM
+
+- Groq API
+- LangChain
+
+## 🧠 Embeddings
+
+- Sentence Transformers
+- HuggingFace Embeddings
+
+## 🗄️ Vector Database
+
+- FAISS
+
+## 📄 PDF Processing
+
+- PyPDF
+
+---
+
+# 📂 Project Structure
 
 ```text
 PDF-Knowledge-Base-Assistant/
@@ -62,16 +76,18 @@ PDF-Knowledge-Base-Assistant/
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### 1. Clone the Repository
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone <repository-url>
 cd PDF-Knowledge-Base-Assistant
 ```
 
-### 2. Create Virtual Environment
+---
+
+## 2️⃣ Create Virtual Environment
 
 ```bash
 python -m venv .venv
@@ -85,13 +101,15 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-#### Linux/Mac
+#### Linux / macOS
 
 ```bash
 source .venv/bin/activate
 ```
 
-### 3. Install Dependencies
+---
+
+## 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -99,7 +117,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔑 Environment Variables
+# 🔑 Environment Variables
 
 Create a `.env` file in the project root.
 
@@ -113,7 +131,7 @@ https://console.groq.com/keys
 
 ---
 
-## ▶️ Running the Application
+# ▶️ Running the Application
 
 ```bash
 streamlit run app.py
@@ -133,71 +151,78 @@ http://localhost:8501
 
 ---
 
-## 📖 How to Use
+# 📖 How to Use
 
-### Step 1: Upload PDFs
+## 📄 Step 1: Upload PDFs
 
 Use the sidebar to upload one or more PDF files.
 
-### Step 2: Build Index
+---
+
+## 🧠 Step 2: Build Index
 
 Click the **Build Index** button to:
 
-* Extract text from PDFs
-* Split text into chunks
-* Generate embeddings
-* Store vectors in FAISS
+- Extract text from PDFs
+- Split text into chunks
+- Generate embeddings
+- Store vectors in FAISS
 
-### Step 3: Ask Questions
+---
+
+## 💬 Step 3: Ask Questions
 
 Enter your question in the chat box.
 
-Example:
+### Example Questions
 
 ```text
 What is recycling of water?
+
 Explain monsoon.
+
 What are the key stakeholders in sustainability assessment?
 ```
 
-### Step 4: View Sources
+---
+
+## 📚 Step 4: View Sources
 
 Expand **Source Context** to see the document chunks used to generate the answer.
 
 ---
 
-## 🔍 Architecture
+# 🔍 Architecture
 
 ```text
-PDF Files
-    │
-    ▼
-PyPDF Text Extraction
-    │
-    ▼
-Text Chunking
-(RecursiveCharacterTextSplitter)
-    │
-    ▼
-HuggingFace Embeddings
-    │
-    ▼
-FAISS Vector Store
-    │
-    ▼
-Retriever
-    │
-    ▼
-Groq LLM
-(ChatGroq)
-    │
-    ▼
-Answer Generation
+               PDF Files
+                   │
+                   ▼
+      PyPDF Text Extraction
+                   │
+                   ▼
+             Text Chunking
+ (RecursiveCharacterTextSplitter)
+                   │
+                   ▼
+      HuggingFace Embeddings
+                   │
+                   ▼
+         FAISS Vector Store
+                   │
+                   ▼
+             Retriever
+                   │
+                   ▼
+         Groq LLM (ChatGroq)
+                   │
+                   ▼
+         Answer Generation
 ```
 
 ---
 
-## 📦 Required Packages
+# 📦 Required Packages
 
 ```text
 streamlit
@@ -221,27 +246,39 @@ transformers
 
 ---
 
-## ⚠️ Limitations
+# ⚠️ Limitations
 
-* Works best with text-based PDFs.
-* Scanned image PDFs require OCR support.
-* Large PDF collections may increase indexing time.
-* Requires an active Groq API key.
-
----
-
-## 🔮 Future Enhancements
-
-* OCR support for scanned PDFs
-* Chat history persistence
-* Multiple vector database options
-* PDF summarization
-* Citation generation
-* User authentication
-* Cloud deployment support
+- Works best with text-based PDFs.
+- Scanned image PDFs require OCR support.
+- Large PDF collections may increase indexing time.
+- Requires an active Groq API key.
 
 ---
 
-## 👨‍💻 Author
+# 🔮 Future Enhancements
 
-Developed using Streamlit, LangChain, FAISS, HuggingFace Embeddings, and Groq LLM.
+- 📷 OCR support for scanned PDFs
+- 💾 Chat history persistence
+- 🗄️ Multiple vector database options
+- 📝 PDF summarization
+- 📑 Citation generation
+- 👤 User authentication
+- ☁️ Cloud deployment support
+
+---
+
+# 👨‍💻 Author
+
+**Vinuta Ishwar Naik**
+
+Developed using **Streamlit**, **LangChain**, **FAISS**, **HuggingFace Embeddings**, and **Groq LLM**.
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a Star!
+
+
+
+</div>
