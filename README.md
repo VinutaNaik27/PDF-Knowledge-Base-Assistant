@@ -2,7 +2,8 @@
 
 <div align="center">
 
-### A Streamlit-based AI application that allows users to upload PDF documents, create a searchable knowledge base using FAISS vector storage, and ask questions about the uploaded content using Groq LLMs and LangChain.
+## A Streamlit-based AI application that allows users to upload PDF documents, 
+##create a searchable knowledge base using FAISS vector storage, and ask questions about the uploaded content using Groq LLMs and LangChain.
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=for-the-badge&logo=streamlit)
 ![LangChain](https://img.shields.io/badge/LangChain-Framework-green?style=for-the-badge)
