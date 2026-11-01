@@ -32,7 +32,7 @@ st.set_page_config(
 )
 
 
-# ---------------- PDF PROCESSING ---------------- #
+
 
 def process_pdfs(pdf_docs):
     text = ""
@@ -86,7 +86,6 @@ def process_pdfs(pdf_docs):
         return False
 
 
-# ---------------- QA CHAIN ---------------- #
 
 def get_qa_chain():
 
@@ -155,7 +154,6 @@ Answer:
     return st.session_state.qa_chain
 
 
-# ---------------- MAIN APP ---------------- #
 
 def main():
 
